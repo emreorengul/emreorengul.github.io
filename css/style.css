@@ -128,12 +128,25 @@ nav a:hover {
 }
 
 /* Form alanları */
+/* Form bloğu genel hizalama */
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+/* Form alanları */
 input, textarea {
   background-color: #f8f8f8;
   border: 1px solid #675C5A;
   color: #201E1F;
+  padding: 12px;
+  font-size: 16px;
+  border-radius: 6px;
+  font-family: 'Segoe UI', sans-serif;
 }
 
+/* Buton */
 button {
   background-color: #6B7A89;
   color: white;
@@ -148,6 +161,7 @@ button {
 button:hover {
   background-color: #675C5A;
 }
+
 
 /* Footer */
 footer {
