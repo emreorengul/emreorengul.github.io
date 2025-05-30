@@ -34,40 +34,52 @@
   color: #444;
 }
 /* Temel renkler ve yazı */
+
+/* Genel stiller */
 body {
   margin: 0;
   font-family: 'Segoe UI', sans-serif;
-  background-color: #f9f6f2; /* pastel açık arka plan */
-  color: #333;
+  background-color: #CDBCA8; /* açık toprak tonu */
+  color: #201E1F;
 }
 
 h1, h2, h3 {
-  color: #1a1a2e;
+  color: #201E1F;
 }
 
 /* NAVBAR */
 nav {
-  background-color: #ffffff; /* beyaz navbar */
+  background-color: #ffffff;
   padding: 15px 20px;
   box-shadow: 0 2px 6px rgba(0,0,0,0.05);
   display: flex;
   justify-content: center;
-  border-bottom: 1px solid #d1d1d1;
+  border-bottom: 1px solid #675C5A;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 25px;
+  padding: 0;
+  margin: 0;
 }
 
 nav a {
-  color: #1a1a2e;
+  text-decoration: none;
+  color: #201E1F;
+  font-weight: 600;
+  transition: color 0.3s;
 }
 
 nav a:hover {
-  color: #e1dbd6;
+  color: #6B7A89; /* hover rengi */
 }
-
 
 /* Hero Bölümü */
 .hero {
-  background: linear-gradient(to right, #e2e2e2, #f9f6f2);
-  color: #1a1a2e;
+  background: linear-gradient(to right, #6B7A89, #675C5A);
+  color: white;
   padding: 80px 20px 100px;
   text-align: center;
 }
@@ -78,11 +90,10 @@ nav a:hover {
 
 .hero p {
   font-size: 18px;
-  color: #444;
+  color: #f0f0f0;
 }
 
-
-/* Genel Bölümler */
+/* Bölümler (Hakkımda, İletişim, Projeler) */
 .section,
 #about,
 #contact,
@@ -90,52 +101,60 @@ nav a:hover {
   background-color: #ffffff;
   border-radius: 10px;
   box-shadow: 0 0 10px rgba(0,0,0,0.05);
-  border: 1px solid #e2e2e2;
+  border: 1px solid #675C5A;
   padding: 20px;
   margin: 40px auto;
   max-width: 800px;
 }
 
-.project-card:hover {
-  background-color: #e1dbd6; /* pastel hover */
+/* Başlıklar */
+#about h2, #contact h2, #projects h2 {
+  text-align: center;
+  margin-bottom: 20px;
+  font-size: 28px;
+  color: #201E1F;
 }
 
+/* Projeler */
+.project-card:hover {
+  background-color: #6B7A89;
+  color: white;
+  transition: 0.3s ease;
+}
+
+.project-card:hover h3,
+.project-card:hover p {
+  color: white;
+}
+
+/* Form alanları */
+input, textarea {
+  background-color: #f8f8f8;
+  border: 1px solid #675C5A;
+  color: #201E1F;
+}
+
+button {
+  background-color: #6B7A89;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  padding: 12px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #675C5A;
+}
 
 /* Footer */
 footer {
   text-align: center;
   padding: 20px;
-  background-color: #f0f0f0;
-  color: #333;
+  background-color: #fff;
+  color: #201E1F;
+  border-top: 1px solid #675C5A;
   margin-top: 60px;
-}
-
-
-
-#contact h2 {
-  text-align: center;
-  margin-bottom: 20px;
-  font-size: 28px;
-}
-
-form {
-  display: flex;
-  flex-direction: column;
-  gap: 15px;
-}
-
-input, textarea {
-  background-color: #f9f6f2;
-  border: 1px solid #d1d1d1;
-  color: #333;
-}
-
-button {
-  background-color: #e2e2e2;
-  color: #1a1a2e;
-  border: 1px solid #d1d1d1;
-}
-
-button:hover {
-  background-color: #e1dbd6;
 }
