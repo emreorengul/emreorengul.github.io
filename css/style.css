@@ -214,22 +214,25 @@ footer {
 .language-switch {
   position: absolute;
   top: 20px;
-  right: 20px;
-  z-index: 999;
+  right: 40px; /* kenardan biraz boşluk */
+  z-index: 1000;
 }
 
 .language-switch a {
   text-decoration: none;
   color: #201E1F;
-  font-weight: bold;
+  font-weight: 600;
   border: 1px solid #6B7A89;
-  padding: 6px 12px;
-  border-radius: 5px;
-  transition: background-color 0.3s ease;
+  background-color: #ffffff;
+  padding: 6px 14px;
+  border-radius: 6px;
+  font-size: 14px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease;
 }
 
 .language-switch a:hover {
   background-color: #6B7A89;
   color: white;
+  border-color: #6B7A89;
 }
-
