@@ -233,4 +233,10 @@ footer {
   opacity: 0.8;
 }
 
+.logo img {
+  height: 40px;
+  vertical-align: middle;
+}
+
+
 
