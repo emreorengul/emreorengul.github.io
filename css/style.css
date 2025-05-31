@@ -70,7 +70,7 @@ nav ul {
 }
 .language-switch {
   position: absolute;
-  top: 10px;
+  top: 9px;
   right: 40px; /* kenardan biraz boşluk */
   z-index: 1000;
 } 
